@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Onboarding Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Welcome to the TechNova Onboarding Quiz!</h1>
+            <p>This short quiz will help you review key company values and policies. Click "Start Quiz" to begin.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="hidden">
+            <div id="score" class="score">0/5</div>
+            <div id="question-container">
+                <h2 id="question">Question text</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+            </div>
+            <div id="feedback-container" class="feedback-container">
+                <p id="feedback-text"></p>
+            </div>
+        </div>
+
+        <!-- Completion Screen -->
+        <div id="completion-screen" class="hidden">
+            <h2 id="results-heading">Your Results</h2>
+            <p id="final-score"></p>
+            <p id="final-message"></p>
+            <button id="retake-btn">Retake Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
